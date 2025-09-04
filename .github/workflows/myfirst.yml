@@ -1,7 +1,7 @@
 name: My First Workflow
 
     on:
-        push # This workflow runs on every push to any branch
+      push # This workflow runs on every push to any branch
 
     jobs:
       build:
