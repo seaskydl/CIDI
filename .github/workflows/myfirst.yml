@@ -1,15 +1,15 @@
 name: My First Workflow
 
-    on:
-      push # This workflow runs on every push to any branch
+on:
+  push # This workflow runs on every push to any branch
 
-    jobs:
-      build:
-        runs-on: ubuntu-latest # The type of runner that the job will run on
+jobs:
+  build:
+    runs-on: ubuntu-latest # The type of runner that the job will run on
 
-        steps:
-          - name: Checkout repository
-            uses: actions/checkout@v4 # Action to checkout your repository
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4 # Action to checkout your repository
 
-          - name: Say hello
-            run: echo "Hello from GitHub Actions!" # A simple command to execute
+      - name: Say hello
+        run: echo "Hello from GitHub Actions!" # A simple command to execute
